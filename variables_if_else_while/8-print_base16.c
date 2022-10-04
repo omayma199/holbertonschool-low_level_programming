@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main - lowercase, and then in uppercase
+ *main - numbers of base 16 in lowercase
  *
  *Return: char
  */
