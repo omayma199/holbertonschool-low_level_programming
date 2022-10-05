@@ -6,8 +6,5 @@
  */
 int print_last_digit(int x)
 {
-int n;
-while (x >= 10) 
-n = x %  10;
-return (n);
+return (x % 10);
 }
