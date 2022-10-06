@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - prints a square, followed by a new line
+ * print_square - prints a square, followed by a new line
  * @size: number of times to print '#'
  * Return: a square
  */
