@@ -2,7 +2,7 @@
 
 /**
  * main : entry point of the programming code to start its execution
- * description: print file name 
+ * description: print file name
  * return: int
  */
 
