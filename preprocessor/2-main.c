@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main : entry point of the programming code to start its execution
+ * main - entry point
  * description: print file name
- * return: int
+ * Return: int
  */
 
 int main(void)
