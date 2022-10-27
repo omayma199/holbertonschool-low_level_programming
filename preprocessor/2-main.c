@@ -2,8 +2,8 @@
 
 /**
  * main : entry point of the programming code to start its execution
- *
- * return: file name
+ * description: print file name 
+ * return: int
  */
 
 int main(void)
