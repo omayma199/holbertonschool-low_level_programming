@@ -35,3 +35,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
+	res = myFunc(atoi(argv[1]), atoi(argv[3]));
+	printf("%d\n", res);
+	return (0);
+}
