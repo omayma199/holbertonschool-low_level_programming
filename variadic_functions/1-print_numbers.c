@@ -1,5 +1,16 @@
 #include "variadic_functions.h"
 
+/**
+ * print_numbers - Entry point
+ *
+ * @separator: string
+ *
+ * @n: constant unsigned integer
+ *
+ * Description: 'print parameters.'
+ *
+ * Return: void
+ */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
