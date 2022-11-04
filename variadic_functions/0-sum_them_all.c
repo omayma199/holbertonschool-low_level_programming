@@ -1,6 +1,14 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-
+/**
+ * sum_them_all - Entry point
+ *
+ * @n: constant unsigned integer
+ *
+ * Description: 'get sum of numbers.'
+ *
+ * Return: integer
+ */
 int sum_them_all(const unsigned int n, ...)
 {
 
