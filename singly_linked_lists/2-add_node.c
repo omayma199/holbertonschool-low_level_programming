@@ -7,7 +7,7 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	unsigned int len = 0;  
+	unsigned int len = 0;
 	list_t *newNode = malloc(sizeof(list_t));
 
 	if (str == NULL || newNode == NULL)
@@ -18,6 +18,6 @@ list_t *add_node(list_t **head, const char *str)
 	newNode->str = strdup(str);
 	newNode->next = *head;
 	*head = newNode;
-	
+
 	return (*head);
 }
