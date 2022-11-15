@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * print_list- print the elemrnt of list
- * @h: pointer to next element 
- * Return: the number of nodes
- */
+* print_list- print the elemrnt of list
+* @h: pointer to next element
+* Return: the number of nodes
+*/
 size_t print_list(const list_t *h)
 {
     int i = 0;
@@ -14,16 +14,12 @@ size_t print_list(const list_t *h)
         {
             printf("[0] (nil)\n");
         }
-        else 
+        else
         {
             printf("[%d] %s\n", h->len, h->str);
         }
         h = h->next;
         i++;
     }
-    return(i);
+    return (i);
 }
-    
-
-
-
