@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add node - add new element to node list
+ * add_node - add new element to node list
  * @head: adress of list_t
  * @str: string
  * Return: address head
