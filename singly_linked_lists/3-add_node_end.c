@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * aadd_node_end - add new element to the end of node list
+ * add_node_end - add new element to the end of node list
  * @head: adress of list_t
  * @str: string
  * Return: address head
@@ -18,17 +18,17 @@ list_t *add_node_end(list_t **head, const char *str)
 	newNode->len = len;
 	newNode->str = strdup(str);
 	newNode->next = NULL;
-	if(*head == NULL)
+	if (*head == NULL)
 		*head = newNode;
 	else
 	{
 		lastNode = *head;
-		while(lastNode->next != NULL)
+		while (lastNode->next != NULL)
 		{
 			lastNode = lastNode->next;
 		}
 		lastNode->next = newNode;
-    	}
+	}
 	return (*head);
 }
 
