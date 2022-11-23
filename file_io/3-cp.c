@@ -13,21 +13,21 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf(2, "Usage: cp file_from file_to\n");
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
 	file1 = open(argv[1], O_RDONLY);
 	if (file1 == -1)
 	{
-		printf(2, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 
 	file2 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (file2 == -1)
 	{
-		printf(2, "Error: Can't write to %s\n", argv[2]);
+		dprintf(2, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 		wr_err = write(file2, buf, file_from_r);
 		if (wr_err == -1)
 		{
-			printf(2, "Error: Can't write to %s\n", argv[2]);
+			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
 	}
@@ -67,7 +67,7 @@ void closer(int arg_files)
 
 	if (close_err == -1)
 	{
-		printf(2, "Error: Can't close fd %d\n", arg_files);
+		dprintf(2, "Error: Can't close fd %d\n", arg_files);
 		exit(100);
 	}
 }
