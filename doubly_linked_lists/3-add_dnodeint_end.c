@@ -2,14 +2,15 @@
 /**
  * add_dnodeint_end - add new element to the end of node list
  * @head: adress of node
+ * @n: integer
  * Return: address head
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *newNode = malloc(sizeof(dlistint_t));
-    dlistint_t *h;
+	dlistint_t *h;
 
-    if (newNode == NULL)
+	if (newNode == NULL)
 		return (NULL);
 
 	newNode->n = n;
@@ -25,6 +26,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	else
 		*head = newNode;
-
 	return (newNode);
 }
+
