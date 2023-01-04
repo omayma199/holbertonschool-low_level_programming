@@ -1,26 +1,41 @@
 #include "search_algos.h"
 /**
  * linear_search - search algorithms
- * @array: list of integer
- * @star: from start
- * @stop: from stop
+ * @array: A pointer to the first element of the array to search in
+ * @size: The number of elements in array
+ * @value: The value to search for
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i = 0;
+	size_t i = 0, low = 0, mid = 0, high = size - 1;
 
-	while (i <= size) {
-        int m = i + (size - i) / 2;
+	if (array == NULL)
+		return (-1);
+
+	while (low <= high)
+	{
+		mid = (high + low) / 2;
+		i = low;
+
 		printf("Searching in array: ");
-        if (array[m] == value)
-            return m;
- 
-        else if (array[m] < value)
-            i = m + 1;
-			printf(", %d", array[i]);
-        else
-            size = m - 1;
-			printf("%d", array[i]);
-    }
-    return -1;
+
+		for (; i <= high; ++i)
+		{
+			if (i != low)
+				printf(", %d", array[i]);
+			else
+				printf("%d", array[i]);
+		}
+
+		printf("\n");
+
+		if (array[mid] < value)
+			low = mid + 1;
+		else if (array[mid] > value)
+			high = mid - 1;
+		else
+			return (mid);
+	}
+
+	return (-1);
 }
