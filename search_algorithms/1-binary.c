@@ -15,7 +15,7 @@ int binary_search(int *array, size_t size, int value)
         if (array[m] == value)
             return m;
  
-        if (array[m] < value)
+        else if (array[m] < value)
             i = m + 1;
 			printf(", %d", array[i]);
         else
